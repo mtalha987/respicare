@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Wave from "@/public/images/wave.svg";
-import ArrowLeft from "@/public/images/arrow-left.svg";
+import ArrowLeft from "@/public/images/Arrow-left.svg";
 
 
 const Hero = () => {
