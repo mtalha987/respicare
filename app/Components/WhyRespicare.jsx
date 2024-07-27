@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ArrowLeft from "@/public/images/Arrow-left.svg";
-import WhyRespicareImg from "@/public/images/WhyRespicare.png";
+import WhyRespicareImg from "@/public/images/whyRespicare.png";
 
 const WhyRespicare = () => {
   return (
