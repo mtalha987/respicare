@@ -7,7 +7,7 @@ import ArrowLeft from "@/public/images/Arrow-left.svg";
 const Hero = () => {
   return (
     <>
-      <div className="sm:h-[850px] xs:h-[85vh]  bg-hero-section bg-no-repeat bg-cover  rounded-b-[50% 60%] relative">
+      <div className="sm:h-[850px] xs:h-[85vh]  bg-hero-section bg-no-repeat bg-cover  rounded-b-[50% 60%] relative 2xl:overflow-hidden">
         <div className="lg:mx-[90px] mx-5 sm:pt-[200px] pt-10">
           <h1 className="text-white text-[56px] font-medium font-['Neue Haas Grotesk Display Pro'] leading-[59px] lg:w-[50%]">Breathe Better, Live 
           Better with Respicare</h1>
