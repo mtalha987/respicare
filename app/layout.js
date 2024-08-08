@@ -1,7 +1,10 @@
-import { Inter } from "next/font/google";
+import { Inter,Poppins } from "next/font/google";
 import "./globals.css";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ weight:"500", subsets: ["latin"] });
 
 export const metadata = {
   title: "Respicare",
@@ -31,7 +34,7 @@ export default function RootLayout({ children }) {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}><Header/>{children}<Footer/></body>
     </html>
   );
 }

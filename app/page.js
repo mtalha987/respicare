@@ -9,13 +9,11 @@ import WhyRespicare from "./Components/WhyRespicare";
 export default function Home() {
   return (
     <>
-    <Header/>
     <Hero/>
     <Diagnostics/>
     <Ventilation/>
     <OurProduct/>
     <WhyRespicare/>
-    <Footer/>
     </>
   );
 }
