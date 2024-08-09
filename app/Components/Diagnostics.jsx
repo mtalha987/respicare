@@ -7,7 +7,7 @@ import DiagnosticsProfile from "@/public/images/diagnostics.png";
 const Diagnostics = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row ">
+      <div className="flex flex-col md:flex-row 2xl:justify-center ">
         <div className="ml-16">
           <Image src={DiagnosticsProfile} alt="Diagnostics" />
         </div>

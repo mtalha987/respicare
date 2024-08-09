@@ -6,7 +6,7 @@ import VentilationImg from "@/public/images/ventilationImg.png";
 const Ventilation = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row mt-10 lg:mt-0 ">
+      <div className="flex flex-col md:flex-row mt-10 lg:mt-0 2xl:justify-center ">
         <div className="ml-16   sm:order-2">
           <Image src={VentilationImg} alt="Diagnostics" />
         </div>

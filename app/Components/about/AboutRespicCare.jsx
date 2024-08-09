@@ -7,7 +7,9 @@ const AboutRespicCare = (props) => {
   return (
     <>
       <div className="flex flex-col md:flex-row xl:justify-center mt-10 ">
-        <div className={`ml-16 order-${props.orderOf} `}>
+        <div  className={`ml-16 ${
+          !props.orderOf  ? "order-1 md:order-1" : "order-0 md:order-0"
+        }`}>
           <Image src={props.image} alt="Diagnostics" />
         </div>
         <div className="lg:mt-44 lg:m-14 mx-10 xs:mx-5">
@@ -24,6 +26,7 @@ const AboutRespicCare = (props) => {
             Get Start <Image src={ArrowLeft} className="" />
           </button>
         </div>
+        {/* <div className="bg-primary">sdsfsdf</div> */}
       </div>
     </>
   );

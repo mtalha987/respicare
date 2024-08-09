@@ -56,6 +56,8 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
           'hero-section': "url('/images/hero.png')",
+          'CTA':"url('../public/images/CTA.svg')",
+        'mCTA':"url('../public/images/mCTA.svg')",
       },
     },
   },

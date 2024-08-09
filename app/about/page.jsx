@@ -19,7 +19,7 @@ const page = () => {
               diminishes. Our family of spirometry, complete PFT, and
               CPET testing products help to classify pathophysiology
               and offer valuable information for differential diagnoses."
-        orderOf="1"
+        orderOf={true}
       />
       <AboutRespicCare
         image={About2}
@@ -29,7 +29,7 @@ const page = () => {
               diminishes. Our family of spirometry, complete PFT, and
               CPET testing products help to classify pathophysiology
               and offer valuable information for differential diagnoses."
-        orderOf="0"
+        orderOf={false}
       />
       <AboutRespicCare
         image={About3}
@@ -39,7 +39,7 @@ const page = () => {
               diminishes. Our family of spirometry, complete PFT, and
               CPET testing products help to classify pathophysiology
               and offer valuable information for differential diagnoses."
-        orderOf="1"
+        orderOf={true}
       />
     </>
   );

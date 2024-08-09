@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Logo from "@/public/images/logo.svg"
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -8,17 +9,17 @@ const Footer = () => {
     <div className='mt-44  border-t border-black/20 lg:pt-16 pt-5'>
         <div className='flex flex-col lg:flex-row gap-7 lg:gap-0 lg:justify-between  lg:mx-[90px] mx-5 flex-wrap lg:flex-nowrap'>
             <div>
-                <div><Image src={Logo} /></div>
+                <div><Link href='/'><Image src={Logo} /></Link></div>
                 <h2 className="xl:w-[407px] w-[80%] text-black text-base font-normal font-['Inter'] leading-normal mt-7">Enhancing your quality of life with exceptional respiratory products.</h2>
             </div>
             <div>
                 <h2 className=" text-black text-2xl font-normal font-['Arial'] leading-9">About Us</h2>
                 <div>
                     <ul className='flex flex-col gap-3 mt-3 text-black text-base font-normal font-["Inter"] leading-normal"'>
-                        <li>Home</li>
-                        <li>About us</li>
-                        <li>Product</li>
-                        <li>Contact Us</li>
+                        <li><Link href='/'>Home</Link></li>
+                        <li><Link href='/about'>About Us</Link></li>
+                        <li><Link href='/product'>Product</Link></li>
+                        <li><Link href='/contact'>Contact Us</Link></li>
                     </ul>
                 </div>
             </div>
