@@ -1,3 +1,4 @@
+import Banner from "./Components/Banner";
 import Diagnostics from "./Components/Diagnostics";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
@@ -13,6 +14,7 @@ export default function Home() {
     <Diagnostics/>
     <Ventilation/>
     <OurProduct/>
+    <Banner/>
     <WhyRespicare/>
     </>
   );

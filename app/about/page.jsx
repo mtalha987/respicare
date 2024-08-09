@@ -6,6 +6,7 @@ import DiagnosticsProfile from "@/public/images/diagnostics.png";
 import About1 from "@/public/images/about1.svg";
 import About2 from "@/public/images/about2.svg";
 import About3 from "@/public/images/about3.svg";
+import Banner from "../Components/Banner";
 
 const page = () => {
   return (
@@ -41,6 +42,7 @@ const page = () => {
               and offer valuable information for differential diagnoses."
         orderOf={true}
       />
+      <Banner/>
     </>
   );
 };

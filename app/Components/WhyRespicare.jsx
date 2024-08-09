@@ -6,8 +6,8 @@ import WhyRespicareImg from "@/public/images/whyRespicare.png";
 const WhyRespicare = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row 2xl:justify-center ">
-        <div className="ml-16">
+      <div className="flex flex-col md:flex-row 2xl:justify-center xs:mt-20">
+        <div className="ml-16 xs:ml-0 xs:order-1">
           <Image src={WhyRespicareImg} alt="Diagnostics" />
         </div>
         <div className="lg:mt-44 lg:m-14 mx-10 xs:mx-5">
