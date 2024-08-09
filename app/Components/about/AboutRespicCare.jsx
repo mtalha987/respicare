@@ -6,10 +6,10 @@ import DiagnosticsProfile from "@/public/images/diagnostics.png";
 const AboutRespicCare = (props) => {
   return (
     <>
-      <div className="flex flex-col md:flex-row xl:justify-center mt-10 ">
-        <div  className={`ml-16 ${
-          !props.orderOf  ? "order-1 md:order-1" : "order-0 md:order-0"
-        }`}>
+      <div className="flex flex-col lg:flex-row xl:justify-center mt-10 ">
+        <div  className={`ml-16 xs:ml-0 ${
+          !props.orderOf  ? "xs:order-1 lg:order-1" : "xs:order-1  lg:order-0"
+        } `}>
           <Image src={props.image} alt="Diagnostics" />
         </div>
         <div className="lg:mt-44 lg:m-14 mx-10 xs:mx-5">
