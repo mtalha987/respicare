@@ -62,19 +62,36 @@ const Header = () => {
         {/* Mobile Menu */}
         {isOpen && (
             
-          <div className="md:hidden bg-white flex items-center  flex-col ">
+          <div  className={`md:hidden bg-white flex flex-col items-center transition-all duration-700 ease-in-out transform ${
+            isOpen ? "opacity-100 scale-100 rotate-0" : "opacity-0 scale-50 -rotate-12"
+          }`}
+          style={{
+            transitionDelay: isOpen ? "0.1s" : "0s",
+          }}>
             
             <ul className="flex items-center w-full flex-col gap-4 pt-4 text-black text-base font-normal font-secondary leading-tight">
-              <li><Link href="/">Home</Link></li>
+              <li  className={`transition-all duration-500 ease-in-out transform ${
+                isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
+              }`}
+              style={{ transitionDelay: isOpen ? "0.2s" : "0s" }}><Link href="/">Home</Link></li>
               <div className="w-full h-[0px] opacity-40 border border-[#0000004D] "></div>
 
-              <li><Link href="/about">About Us</Link></li>
+              <li className={`transition-all duration-500 ease-in-out transform ${
+                isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
+              }`}
+              style={{ transitionDelay: isOpen ? "0.4s" : "0s" }}><Link href="/about">About Us</Link></li>
               <div className="w-full h-[0px] opacity-40 border border-[#0000004D]  "></div>
 
-              <li><Link href="/product">Product</Link></li>
+              <li className={`transition-all duration-500 ease-in-out transform ${
+                isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
+              }`}
+              style={{ transitionDelay: isOpen ? "0.6s" : "0s" }}><Link href="/product">Product</Link></li>
               <div className="w-full h-[0px] opacity-40 border border-[#0000004D] "></div>
 
-              <li><Link href="/contact">Contact Us</Link></li>
+              <li className={`transition-all duration-500 ease-in-out transform ${
+                isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
+              }`}
+              style={{ transitionDelay: isOpen ? "0.8s" : "0s" }}><Link href="/contact">Contact Us</Link></li>
               <div className="w-full h-[0px] opacity-40 border border-[#0000004D]  "></div>
             </ul>
             <div className="px-[25px] mt-12 py-3 bg-primary justify-center items-center gap-4 inline-flex text-white text-base font-medium font-primary">
