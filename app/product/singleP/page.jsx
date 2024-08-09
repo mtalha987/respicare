@@ -3,12 +3,12 @@ import React from "react";
 import { useState } from 'react';
 // import { useRouter } from "next/router";
 import PageNameBanner from "../../Components/PageNameBanner";
-import Banner from "../../components/Banner";
+import Banner from "../../Components/Banner";
 import AboutHeroImg from '@/public/images/aboutHeroImg.svg';
 import BackButton from "@/app/Components/product/BackButton";
 import ProductMainDetail from "@/app/Components/product/ProductMainDetail";
 import RelatedProducts from "@/app/Components/product/RelatedProducts";
-import Popup from "@/app/components/product/Popup";
+import Popup from "@/app/Components/product/Popup";
 
 
 // const productData = [
