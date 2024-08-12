@@ -6,15 +6,22 @@ import WingImg3 from "@/public/images/wing3.svg";
 import WingImg4 from "@/public/images/wing4.svg";
 import WingImg5 from "@/public/images/wing5.svg";
 import WingImg6 from "@/public/images/wing6.svg";
+import MobileDropDown from "./MobileDropDown";
 
 const OurProduct = () => {
   return (
     <>
       <div className="flex flex-col items-center lg:mt-20 mt-12">
-        <h2 className="text-[#95669d] text-[42px] font-normal font-['Arial'] leading-[44.25px] ">
-          Our Product
-        </h2>
-        <div className="lg:mt-11 mt-5 flex gap-3 flex-wrap justify-center">
+        <div className="xs:flex xs:items-center xs:justify-center xs:gap-5 xs:flex-wrap">
+          <div>
+            <h2 className="text-[#95669d] text-[42px] xs:text-[32px] font-normal font-['Arial'] leading-[44.25px] ">
+              Our Product
+            </h2>
+          </div>
+          <MobileDropDown />
+        </div>
+
+        <div className="lg:mt-11 mt-5 flex gap-3 flex-wrap justify-center xs:hidden">
           <div className='h-[35px] px-[15px] py-2.5 bg-[#f7f7f7] rounded-lg justify-center items-center gap-2.5 inline-flex text-[#6f6f6f] text-[13px] font-normal font-["Arial"]'>
             All Products
           </div>

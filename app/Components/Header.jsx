@@ -37,7 +37,7 @@ const Header = () => {
           </div>
           <div className="hidden md:flex items-center">
             <div className="xl:mr-[205px] lg:mr-[150px] sm:mr-10 mr-4 text-neutral-gray text-base font-normal font-primary leading-normal">
-              <ul className="flex gap-8">
+              <ul className="flex lg:gap-8 gap-6">
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/about">About Us</Link></li>
                 <li><Link href="/product">Product</Link></li>
