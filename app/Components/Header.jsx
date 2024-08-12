@@ -12,6 +12,9 @@ const Header = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen); // Toggle the mobile menu state
   };
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
   return (
     <>
       <div className="pt-[20px] xl:px-[90px] lg:px-[40px] px-5">
@@ -73,25 +76,25 @@ const Header = () => {
               <li  className={`transition-all duration-500 ease-in-out transform ${
                 isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
               }`}
-              style={{ transitionDelay: isOpen ? "0.2s" : "0s" }}><Link href="/">Home</Link></li>
+              style={{ transitionDelay: isOpen ? "0.2s" : "0s" }}><Link href="/" onClick={handleLinkClick}>Home</Link></li>
               <div className="w-full h-[0px] opacity-40 border border-[#0000004D] "></div>
 
               <li className={`transition-all duration-500 ease-in-out transform ${
                 isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
               }`}
-              style={{ transitionDelay: isOpen ? "0.4s" : "0s" }}><Link href="/about">About Us</Link></li>
+              style={{ transitionDelay: isOpen ? "0.4s" : "0s" }}><Link href="/about" onClick={handleLinkClick}>About Us</Link></li>
               <div className="w-full h-[0px] opacity-40 border border-[#0000004D]  "></div>
 
               <li className={`transition-all duration-500 ease-in-out transform ${
                 isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
               }`}
-              style={{ transitionDelay: isOpen ? "0.6s" : "0s" }}><Link href="/product">Product</Link></li>
+              style={{ transitionDelay: isOpen ? "0.6s" : "0s" }}><Link href="/product" onClick={handleLinkClick}>Product</Link></li>
               <div className="w-full h-[0px] opacity-40 border border-[#0000004D] "></div>
 
               <li className={`transition-all duration-500 ease-in-out transform ${
                 isOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
               }`}
-              style={{ transitionDelay: isOpen ? "0.8s" : "0s" }}><Link href="/contact">Contact Us</Link></li>
+              style={{ transitionDelay: isOpen ? "0.8s" : "0s" }}><Link href="/contact" onClick={handleLinkClick}>Contact Us</Link></li>
               <div className="w-full h-[0px] opacity-40 border border-[#0000004D]  "></div>
             </ul>
             <div className="px-[25px] mt-12 py-3 bg-primary justify-center items-center gap-4 inline-flex text-white text-base font-medium font-primary">
